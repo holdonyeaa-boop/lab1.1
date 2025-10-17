@@ -60,7 +60,7 @@ namespace MyApplication
                 double result = method.Integrate(function, lowerLimit, upperLimit, partitions);
                 if (swapped) result = -result;
 
-                tbAnswer.Text = result.ToString("F8");
+                tbAnswer.Text = result.ToString("F3");
             }
             catch (Exception ex)
             {
